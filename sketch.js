@@ -42,25 +42,26 @@ function preload() {
 
 
 function setup() {      //setup para executar somente uma vez
-  /*createCanvas(tamArea, tamArea);
+  createCanvas(tamArea, tamArea);
   xj = 30;  //x da nave
   xd = xj;  //x do disparo              
   yj = 400;  //y da nave
   yd = yj;    //y do disparo
-  frameRate(30);  //velocidade da descida dos meteoros?*/
+  frameRate(30);  //velocidade da descida dos meteoros?
   
+  /* adicionei para testar css
   imgstyle= createImg(  "nave.png",  'nave');
   imgstyle.style("border-width", "6px")
   imgstyle.style("border-style", "dashed")
   imgstyle.style( "border-color", "#f00")
+  */
+  
+  
   //imgstyle.style("border-style", solid)
     
-    //imgstyle.style( 'border-color', '#f00')
-    //imgstyle.style( "background_color", "pink")
-    // imgstyle.style("border-width", "thick")
-  
-  
-  
+  //imgstyle.style( 'border-color', '#f00')
+  //imgstyle.style( "background_color", "pink")
+  // imgstyle.style("border-width", "thick")  
   
   
   for ( i = 0; i < 100; i++) { //inicializa coord de 100 meteoros?
@@ -69,14 +70,15 @@ function setup() {      //setup para executar somente uma vez
     }
 }
 
-/*function draw() {            //Draw para executar sempre
+function draw() {            //Draw para executar sempre
 
 //inicio do Jogo
 if ( tela == 1) {  
   background(img); //imagem do fundo com figura
   textSize(34); 
-  fill(500,50,10);
-  text("JOGO" ,190 , 50)
+  fill(135,206,235);
+  text("Exemplo JOGO" ,130 , 50)
+   fill(200,50,200);
   text("Para começar"+"\n"+
        "pressione ENTER", 130, 250);
   if (keyIsDown(ENTER) ) {
@@ -143,11 +145,11 @@ if ( tela == 2) {
    
   //--------------------------textos na tela-----------------------------
  
-  textSize(20);
+  textSize(22);
   fill(135,206,235);
-  text("Vidas: "+vidas, 10, 20);
-  text("Pontos: "+pontos, 350, 20);
-  text( "nivel: "+ nivel, 170, 20)
+  text("Vidas: "+vidas, 10, 25);
+  text("Pontos: "+pontos, 390, 25);
+  text( "Nivel: "+ nivel, 220, 25)
   
   //-----------------------colisÃ£o entre os objetos--------------------- entre nave e meteoro
   
@@ -216,8 +218,8 @@ if ( tela == 2) {
 
 if ( tela == 3) {
     background(img);
-    textSize(32); 
-    fill(135,206,235);
+    textSize(32);    
+    fill(450,50,10);
     text("FIM DE JOGO", 130, 250);
     if (keyIsDown(32) ) {
        tela = 1;      
@@ -225,4 +227,4 @@ if ( tela == 3) {
   }
 
 }                    //fim de function draw
-*/
+
