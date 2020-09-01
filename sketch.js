@@ -148,7 +148,7 @@ if ( tela == 2) {
   textSize(22);
   fill(135,206,235);
   text("Vidas: "+vidas, 10, 25);
-  text("Pontos: "+pontos, 390, 25);
+  text("Pontos: "+pontos, 385, 25);
   text( "Nivel: "+ nivel, 220, 25)
   
   //-----------------------colisÃ£o entre os objetos--------------------- entre nave e meteoro
@@ -219,7 +219,7 @@ if ( tela == 2) {
 if ( tela == 3) {
     background(img);
     textSize(32);    
-    fill(450,50,10);
+    fill(480,50,10);
     text("FIM DE JOGO", 130, 250);
     if (keyIsDown(32) ) {
        tela = 1;      
